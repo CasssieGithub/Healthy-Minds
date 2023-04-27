@@ -5,6 +5,8 @@ import { useDispatch } from "react-redux";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import authSlice from "../store/slices/auth";
+import { Link } from "react-router-dom";
+import "./Login.css";
 
 function Login() {
   const [message, setMessage] = useState("");
@@ -24,7 +26,7 @@ function Login() {
         );
         dispatch(authSlice.actions.setAccount(res.data.user));
         setLoading(false);
-        navigate("/");
+        navigate("/Profile");
       })
       .catch((err) => {
         console.log(err);
@@ -92,6 +94,11 @@ function Login() {
             >
               Login
             </button>
+            <div className="homeBtnOnLoginPageContainer">
+              <Link className="homeBtnOnLoginPage" to="/">
+                Home
+              </Link>
+            </div>
           </div>
         </form>
       </div>

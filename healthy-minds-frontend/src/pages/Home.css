@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap");
+
+body {
+  background-color: #f7f7f5;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: bold;
+}
+/* Header */
+.loginBtn {
+  border: 3px solid #b79877;
+  text-decoration: none;
+  font-size: 17px;
+  margin-right: 10px;
+  border-radius: 10px;
+  padding: 7px 15px 7px 15px;
+  color: black;
+  background-color: #f5e1ca;
+  font-family: "Cormorant Garamond", serif;
+}
+.loginBtn:hover {
+  background-color: #f6c493b3;
+}
+.signUpBtn {
+  border: 3px solid #b79877;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 10px;
+  padding: 7px 15px 7px 15px;
+  color: black;
+  background-color: #f5e1ca;
+  font-family: "Cormorant Garamond", serif;
+}
+.signUpBtn:hover {
+  background-color: #f6c493b3;
+}
+.holdsTheBtnsIntroPage {
+  margin: 15px 15px 0px 15px;
+  padding: 20px 25px 20px 20px;
+  text-align: right;
+}
+
+.introImage {
+  height: 600px;
+  padding-left: 150px;
+  margin: 0px 5px 5px 5px;
+}
+/* Mission Statement section */
+
+.missionStatementTitle {
+  text-align: left;
+  padding-left: 30px;
+  font-size: 35px;
+  padding: 0px 0px 20px 30px;
+  font-family: "Cormorant Garamond", serif;
+}
+.missionStatementParagraph {
+  font-size: 18px;
+  margin: 30px 100px 75px 100px;
+}
+.containerForMissionStatementParagraph {
+  margin: 30px;
+  font-family: "Cormorant Garamond", serif;
+}
+/*  Testimonials section */
+
+.testimonialsTitle {
+  text-align: left;
+  font-size: 35px;
+  padding: 0px 0px 30px 30px;
+  font-family: "Cormorant Garamond", serif;
+}
+.testimonialsSection {
+  font-size: 18px;
+  margin: 30px 50px 20px 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Photots on intro page */
+
+.photosOnIntroPage {
+  max-width: 250px;
+  max-height: 450px;
+  margin-bottom: 100px;
+  box-shadow: 10px 5px 5px #807b7b;
+  border: 1px solid #6d6969;
+  transition: all 0.5s;
+}
+
+.photosOnIntroPage:hover {
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* .photoTwoOnIntroPage {
+  max-width: 250px;
+  max-height: 450px;
+  margin-bottom: 100px;
+  box-shadow: 10px 5px 5px #807b7b;
+  border: 1px solid #6d6969;
+}
+
+.photoThreeOnIntroPage {
+  max-width: 250px;
+  max-height: 450px;
+  margin-bottom: 100px;
+  box-shadow: 10px 5px 5px #807b7b;
+  border: 1px solid #6d6969;
+}
+.photoFourOnIntroPage {
+  max-width: 250px;
+  max-height: 450px;
+  margin-bottom: 100px;
+  box-shadow: 10px 5px 5px #807b7b;
+  border: 1px solid #6d6969;
+}
+.photoFiveOnIntroPage {
+  max-width: 250px;
+  max-height: 450px;
+  margin-bottom: 100px;
+  box-shadow: 10px 5px 5px #807b7b;
+  border: 1px solid #6d6969;
+}
+.photoSixOnIntroPage {
+  max-width: 250px;
+  max-height: 450px;
+  margin-bottom: 100px;
+  box-shadow: 10px 5px 5px #807b7b;
+  border: 1px solid #6d6969;
+} */
+
+.containerForPhotoOneOnIntroPage {
+  display: flex;
+  font-size: 16px;
+  text-align: left !important;
+}
+.containerForPhotoTwoOnIntroPage {
+  display: flex;
+  font-size: 16px;
+  text-align: left !important;
+}
+.containerForPhotoThreeOnIntroPage {
+  display: flex;
+  font-size: 16px;
+  text-align: left !important;
+}
+.containerForPhotoFourOnIntroPage {
+  display: flex;
+  font-size: 16px;
+  text-align: left !important;
+}
+.containerForPhotoFiveOnIntroPage {
+  display: flex;
+  font-size: 16px;
+  text-align: left !important;
+}
+.containerForPhotoSixOnIntroPage {
+  display: flex;
+  font-size: 16px;
+  text-align: left !important;
+}
+.name {
+  text-align: right !important;
+}
+.quoteFromTestimonial {
+  padding-left: 20px;
+  margin: 15px;
+}
+
+/* Footer */
+
+.footer {
+  text-align: center;
+  font-size: 20px;
+  margin: 0px 0px 30px 0px;
+  font-family: "Cormorant Garamond", serif;
+}
+.stayInformedTitle {
+  text-align: left;
+  font-size: 35px;
+  padding: 0px 0px 30px 30px;
+  font-family: "Cormorant Garamond", serif;
+}
+.footerRightSide {
+  display: flex;
+  justify-content: center;
+}
+.lineBetweenSocialSites {
+  padding-right: 20px;
+}
+#facebook {
+  text-decoration: none;
+  color: black;
+  padding-right: 20px;
+}
+#facebook:hover {
+  color: #b79877;
+}
+#instagram {
+  text-decoration: none;
+  color: black;
+  padding-right: 20px;
+}
+#instagram:hover {
+  color: #b79877;
+}
+#twitter {
+  text-decoration: none;
+  color: black;
+}
+#twitter:hover {
+  color: #b79877;
+}

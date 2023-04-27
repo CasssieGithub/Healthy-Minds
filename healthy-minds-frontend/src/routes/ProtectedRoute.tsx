@@ -8,7 +8,7 @@ const ProtectedRoute = (props: RouteProps) => {
 
   if (auth.account) {
     if (props.path === "/login") {
-      return <Navigate to={"/"} />;
+      return <Navigate to={"/Profile"} />;
     }
     return <Route {...props} />;
   } else if (!auth.account) {

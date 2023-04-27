@@ -34,7 +34,7 @@ const Profile = () => {
           onClick={handleLogout}
           className="rounded p-2 w-32 bg-red-700 text-white"
         >
-          Deconnexion
+          Logout
         </button>
       </div>
       {user.data ? (
