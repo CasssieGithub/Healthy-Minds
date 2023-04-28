@@ -13,8 +13,6 @@ const axiosService = axios.create({
 axiosService.interceptors.request.use(async (config) => {
   const { token } = store.getState().auth;
 
-  console.log("hellloooo", token);
-
   if (token !== null) {
     config.headers.Authorization = "Bearer " + token;
     // @ts-ignore
@@ -25,7 +23,6 @@ axiosService.interceptors.request.use(async (config) => {
     );
   }
 
-  console.log(config.headers.Authorization);
   return config;
 });
 
@@ -54,6 +51,7 @@ axiosService.interceptors.response.use(
 // @ts-ignore
 const refreshAuthLogic = async (failedRequest) => {
   const { refreshToken } = store.getState().auth;
+  console.log("hi", store.getState().auth);
   if (refreshToken !== null) {
     return axios
       .post(
@@ -69,6 +67,7 @@ const refreshAuthLogic = async (failedRequest) => {
         const { access, refresh } = resp.data;
         failedRequest.response.config.headers.Authorization =
           "Bearer " + access;
+        console.log(access, refresh);
         store.dispatch(
           authSlice.actions.setAuthTokens({
             token: access,

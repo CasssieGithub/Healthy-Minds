@@ -6,6 +6,7 @@ import useSWR from "swr";
 import { fetcher } from "../utils/axios";
 import { UserResponse } from "../types";
 import { RootState } from "../store";
+import { Link } from "react-router-dom";
 
 interface LocationState {
   userId: string;
@@ -13,13 +14,12 @@ interface LocationState {
 
 const Profile = () => {
   const account = useSelector((state: RootState) => state.auth.account);
+  const auth = useSelector((state: RootState) => state.auth);
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  console.log(account);
-
   const userId = account?.id;
-
+  console.log(auth, "hi");
   const user = useSWR<UserResponse>(`/user/${userId}/`, fetcher);
 
   const handleLogout = () => {
@@ -44,6 +44,7 @@ const Profile = () => {
       ) : (
         <p className="text-center items-center">Loading ...</p>
       )}
+      <Link to="/Forms">Click to fill out your weekly form</Link>
     </div>
   );
 };
