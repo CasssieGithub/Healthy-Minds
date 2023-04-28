@@ -9,6 +9,7 @@ import Login from "./pages/Login";
 import Profile from "./pages/Profile";
 import HomePage from "./pages/Home";
 import Signup from "./pages/Signup";
+import Forms from "./pages/Forms";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/Profile" element={<Profile />} />
             <Route path="/" element={<HomePage />} />
             <Route path="/Signup" element={<Signup />} />
+            <Route path="/Forms" element={<Forms />} />
           </Routes>
         </PersistGate>
       </Provider>

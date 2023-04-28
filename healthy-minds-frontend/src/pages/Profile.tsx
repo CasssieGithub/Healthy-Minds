@@ -6,6 +6,7 @@ import useSWR from "swr";
 import { fetcher } from "../utils/axios";
 import { UserResponse } from "../types";
 import { RootState } from "../store";
+import { Link } from "react-router-dom";
 
 interface LocationState {
   userId: string;
@@ -44,6 +45,7 @@ const Profile = () => {
       ) : (
         <p className="text-center items-center">Loading ...</p>
       )}
+      <Link to="/Forms">Click to fill out your weekly form</Link>
     </div>
   );
 };

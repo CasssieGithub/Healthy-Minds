@@ -1,0 +1,33 @@
+.phq-9Container {
+  text-align: center;
+  border: 1px solid #b1abab;
+  margin: 20px;
+  padding: 35px;
+}
+.phq-9Questions {
+  padding-bottom: 19px;
+}
+.phq-9Title {
+  font-size: 30px;
+}
+.phq-9Questions {
+  display: flex;
+  justify-content: space-between;
+}
+.containsInstructionsForPHQ-9 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.containsAllCheckBoxes {
+  display: flex;
+}
+.phq-9Range {
+  padding-right: 20px;
+}
+.checkboxesForPHQ-9Container {
+  display: flex;
+}
+.holdingTheCheckboxes {
+  display: flex;
+}
