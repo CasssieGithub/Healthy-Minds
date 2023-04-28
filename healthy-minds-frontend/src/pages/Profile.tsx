@@ -14,13 +14,12 @@ interface LocationState {
 
 const Profile = () => {
   const account = useSelector((state: RootState) => state.auth.account);
+  const auth = useSelector((state: RootState) => state.auth);
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  console.log(account);
-
   const userId = account?.id;
-
+  console.log(auth, "hi");
   const user = useSWR<UserResponse>(`/user/${userId}/`, fetcher);
 
   const handleLogout = () => {
