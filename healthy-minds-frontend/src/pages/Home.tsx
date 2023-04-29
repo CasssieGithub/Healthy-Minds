@@ -25,8 +25,16 @@ const HomePage = () => {
       {/* Header */}
       {ifUserIsLoggedIn ? (
         <>
-          <Link to="/Profile"> Return to profile page</Link>
-          <button onClick={handleLogout}> Logout</button>
+          <div className="containsBtnsWhileLoggedIn">
+            <Link className="backToProfileBtnWhileLoggedIn" to="/Profile">
+              {" "}
+              Return to profile page
+            </Link>
+            <button className="logoutBtn" onClick={handleLogout}>
+              {" "}
+              Logout
+            </button>
+          </div>
         </>
       ) : (
         <>
