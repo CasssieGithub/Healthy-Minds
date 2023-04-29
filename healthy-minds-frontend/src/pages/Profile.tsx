@@ -7,6 +7,7 @@ import { fetcher } from "../utils/axios";
 import { UserResponse } from "../types";
 import { RootState } from "../store";
 import { Link } from "react-router-dom";
+import "./Profile.css";
 
 interface LocationState {
   userId: string;
@@ -14,12 +15,10 @@ interface LocationState {
 
 const Profile = () => {
   const account = useSelector((state: RootState) => state.auth.account);
-  const auth = useSelector((state: RootState) => state.auth);
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
   const userId = account?.id;
-  console.log(auth, "hi");
   const user = useSWR<UserResponse>(`/user/${userId}/`, fetcher);
 
   const handleLogout = () => {
@@ -30,10 +29,7 @@ const Profile = () => {
   return (
     <div className="w-full h-screen">
       <div className="w-full p-6">
-        <button
-          onClick={handleLogout}
-          className="rounded p-2 w-32 bg-red-700 text-white"
-        >
+        <button onClick={handleLogout} className="logOutBtn">
           Logout
         </button>
       </div>
@@ -44,7 +40,15 @@ const Profile = () => {
       ) : (
         <p className="text-center items-center">Loading ...</p>
       )}
-      <Link to="/Forms">Click to fill out your weekly form</Link>
+      <Link className="fillOutFormBtnOnProfile" to="/PHQ9Form">
+        Click to fill out your weekly PHQ-9 form
+      </Link>
+      <Link className="returnToHomepageBtnOnProfile" to="/">
+        Return to Homepage
+      </Link>
+      <Link className="fillOutFormBtnOnProfile" to="/GAD7Form">
+        Click to fill out your weekly GAD-7 form{" "}
+      </Link>
     </div>
   );
 };

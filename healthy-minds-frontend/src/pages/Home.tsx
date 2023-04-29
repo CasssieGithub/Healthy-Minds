@@ -2,26 +2,51 @@ import { Link } from "react-router-dom";
 import "./Home.css";
 // import Fade from "react-reveal";
 import FadeIn from "react-fade-in";
+import { RootState } from "../store";
+import { useDispatch, useSelector } from "react-redux";
+
+import { useNavigate, useLocation } from "react-router";
+import authSlice from "../store/slices/auth";
 
 const HomePage = () => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const ifUserIsLoggedIn = useSelector(
+    (state: RootState) => state.auth.account
+  );
+
+  const handleLogout = () => {
+    dispatch(authSlice.actions.logout());
+    navigate("/login");
+  };
+
   return (
     <div>
       {/* Header */}
-      <div className="holdsTheBtnsIntroPage">
-        <Link className="loginBtn" to="/Login">
-          Login
-        </Link>
-        <Link className="signUpBtn" to="/SignUp">
-          Sign Up
-        </Link>
-      </div>
+      {ifUserIsLoggedIn ? (
+        <>
+          <Link to="/Profile"> Return to profile page</Link>
+          <button onClick={handleLogout}> Logout</button>
+        </>
+      ) : (
+        <>
+          <div className="holdsTheBtnsIntroPage">
+            <Link className="loginBtn" to="/Login">
+              Login
+            </Link>
+            <Link className="signUpBtn" to="/SignUp">
+              Sign Up
+            </Link>
+          </div>
+        </>
+      )}
+
       <div>
         <div></div>
         <div className="imageOnIntro">
           <img className="introImage" src="https://i.imgur.com/cGOJreD.jpg" />
         </div>
       </div>
-
       {/* Mission Statement */}
       <div className="containerForMissionStatement">
         <div className="missionStatementTitle">Our Mission Statement</div>
@@ -142,7 +167,6 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-
       {/*  Footer */}
       <div className="stayInformedTitle">Stay Informed </div>
       <br />

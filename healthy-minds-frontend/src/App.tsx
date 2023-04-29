@@ -9,7 +9,8 @@ import Login from "./pages/Login";
 import Profile from "./pages/Profile";
 import HomePage from "./pages/Home";
 import Signup from "./pages/Signup";
-import Forms from "./pages/Forms";
+import PHQ9Form from "./pages/PHQ9Form";
+import GAD7Form from "./pages/GAD7Form";
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
             <Route path="/Profile" element={<Profile />} />
             <Route path="/" element={<HomePage />} />
             <Route path="/Signup" element={<Signup />} />
-            <Route path="/Forms" element={<Forms />} />
+            <Route path="/PHQ9Form" element={<PHQ9Form />} />
+            <Route path="/GAD7Form" element={<GAD7Form />} />
           </Routes>
         </PersistGate>
       </Provider>
