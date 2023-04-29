@@ -33,6 +33,17 @@ body {
 .signUpBtn:hover {
   background-color: #f6c493b3;
 }
+.backToProfileBtn {
+  border: 3px solid #b79877;
+  text-decoration: none;
+  font-size: 17px;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 7px 15px 7px 15px;
+  color: black;
+  background-color: #f5e1ca;
+  font-family: "Cormorant Garamond", serif;
+}
 .holdsTheBtnsIntroPage {
   margin: 15px 15px 0px 15px;
   padding: 20px 25px 20px 20px;

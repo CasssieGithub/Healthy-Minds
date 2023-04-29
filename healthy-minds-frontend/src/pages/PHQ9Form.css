@@ -1,0 +1,99 @@
+.formContainer {
+  text-align: center;
+  border: 1px solid #b1abab;
+  box-shadow: 5px 5px #807b7b, -0.4em 0 0.4em #807b7b;
+  margin: 30px;
+  padding: 50px;
+}
+
+.titleOnFormPage {
+  font-size: 55px;
+  padding-bottom: 35px;
+}
+.formQuestions {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  width: 100%;
+}
+.containsInstructionsForForm {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0px 20px 69px;
+  font-size: 17px;
+  margin-left: 150px;
+}
+
+.containsAllCheckBoxes {
+  display: flex;
+}
+.checkboxRange {
+  padding-right: 35px;
+}
+.checkboxesForFormContainer {
+  display: flex;
+}
+.holdingTheCheckboxes {
+  display: flex;
+}
+.backToProfileBtnOnFormPage {
+  border: 3px solid #b79877;
+  text-decoration: none;
+  font-size: 17px;
+  margin-right: 10px;
+  border-radius: 10px;
+  padding: 7px 15px 7px 15px;
+  color: black;
+  background-color: #f5e1ca;
+  font-family: "Cormorant Garamond", serif;
+}
+.backToProfileBtnOnFormPage:hover {
+  background-color: #f6c493b3;
+}
+
+.homeBtnOnFormPage {
+  border: 3px solid #b79877;
+  text-decoration: none;
+  font-size: 17px;
+  margin-right: 30px;
+  border-radius: 10px;
+  padding: 7px 15px 7px 15px;
+  color: black;
+  background-color: #f5e1ca;
+  font-family: "Cormorant Garamond", serif;
+}
+.homeBtnOnFormPage:hover {
+  background-color: #f6c493b3;
+}
+.linksOnFormsPage {
+  padding-bottom: 30px;
+  padding-top: 25px;
+  text-align: right;
+}
+.submitBtnOnFormsPage {
+  border: 3px solid #b79877;
+  text-decoration: none;
+  font-size: 17px;
+  margin: 10px 10px 0px 0px;
+  border-radius: 10px;
+  padding: 7px 15px 7px 15px;
+  color: black;
+  background-color: #f5e1ca;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+.submitBtnOnFormsPage:hover {
+  background-color: #f6c493b3;
+}
+.btnContainer {
+  text-align: right;
+}
+input[type="radio" i] {
+  margin: 10px 30px 0px 0px;
+  width: 6em;
+  height: 1em;
+}
+.firstQuestionOnForm {
+  font-size: 18px;
+}

@@ -52,3 +52,28 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     def __str__(self):
         return f"{self.email}"
+
+class GAD7Form(models.Model) :
+    answer1 = models.Integer()
+    answer2 = models.Integer()
+    answer3 = models.Integer()
+    answer4 = models.Integer()
+    answer5 = models.Integer()
+    answer6 = models.Integer()
+    answer7 = models.Integer()
+    userId = models.CharField()
+    Overallscore = models.Integer()
+
+class PHQ9Form(models.Model) :
+    answer1 = models.Integer()
+    answer2 = models.Integer()
+    answer3 = models.Integer()
+    answer4 = models.Integer()
+    answer5 = models.Integer()
+    answer6 = models.Integer()
+    answer7 = models.Integer()
+    answer8 = models.Integer()
+    answer9 = models.Integer()
+    userId = models.CharField()
+    Overallscore = models.Integer()
+

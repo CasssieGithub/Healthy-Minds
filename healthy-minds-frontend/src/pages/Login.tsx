@@ -87,11 +87,7 @@ function Login() {
           </div>
 
           <div className="flex justify-center items-center mt-6">
-            <button
-              type="submit"
-              disabled={loading}
-              className="rounded border-gray-300 p-2 w-32 bg-blue-700 text-white"
-            >
+            <button type="submit" disabled={loading} className="logInBtn">
               Login
             </button>
             <div className="homeBtnOnLoginPageContainer">

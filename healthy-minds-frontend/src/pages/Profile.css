@@ -1,20 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap");
 
-.homeBtnOnLoginPage {
+.fillOutFormBtnOnProfile {
   border: 3px solid #b79877;
   text-decoration: none;
   font-size: 17px;
-  margin-right: 10px;
+  margin: 10px;
   border-radius: 10px;
   padding: 7px 15px 7px 15px;
   color: black;
   background-color: #f5e1ca;
   font-family: "Cormorant Garamond", serif;
 }
-.homeBtnOnLoginPageContainer {
-  margin-top: 20px;
+
+.returnToHomepageBtnOnProfile {
+  border: 3px solid #b79877;
+  text-decoration: none;
+  font-size: 17px;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 7px 15px 7px 15px;
+  color: black;
+  background-color: #f5e1ca;
+  font-family: "Cormorant Garamond", serif;
 }
-.logInBtn {
+.logOutBtn {
   border: 3px solid #b79877;
   text-decoration: none;
   font-size: 17px;
