@@ -1,12 +1,19 @@
 import { Formik, FormikConsumer } from "formik";
 import { Link } from "react-router-dom";
-import "./GAD7Form.css";
 import { useFormik } from "formik";
 import React, { useState } from "react";
 import * as Yup from "yup";
+import "./GAD7Form.css";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
+import { RootState } from "../store";
+import { useDispatch, useSelector } from "react-redux";
 
 const GAD7Form = () => {
   const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
+  const account = useSelector((state: RootState) => state.auth.account);
+  const userId = account?.id;
 
   const formik = useFormik({
     initialValues: {
@@ -17,23 +24,38 @@ const GAD7Form = () => {
       answer5: 0,
       answer6: 0,
       answer7: 0,
-      userId: "1234",
-      Overallscore: 0,
+      userId: userId,
     },
     onSubmit: (values) => {
+      const allValuesAddedTogether =
+        +values.answer1 +
+        +values.answer2 +
+        +values.answer3 +
+        +values.answer4 +
+        +values.answer5 +
+        +values.answer6 +
+        +values.answer7;
+      console.log(allValuesAddedTogether);
+      axios
+        .post("http://localhost:8000/api/GAD7Form", {
+          ...values,
+          Overallscore: allValuesAddedTogether,
+          date: Date.now(),
+        })
+        .then((res) => {
+          navigate("/Profile");
+        });
       setLoading(true);
-      console.log(values);
     },
     validationSchema: Yup.object({
-      answer1: Yup.string().trim().required("Answer Required"),
-      answer2: Yup.string().trim().required("Answer Required"),
-      answer3: Yup.string().trim().required("Answer Required"),
-      answer4: Yup.string().trim().required("Answer Required"),
-      answer5: Yup.string().trim().required("Answer Required"),
-      answer6: Yup.string().trim().required("Answer Required"),
-      answer7: Yup.string().trim().required("Answer Required"),
-      userId: Yup.string().trim().required("User Id Required"),
-      Overallscore: Yup.string().trim().required("Overall score "),
+      answer1: Yup.number().required("Answer Required"),
+      answer2: Yup.number().required("Answer Required"),
+      answer3: Yup.number().required("Answer Required"),
+      answer4: Yup.number().required("Answer Required"),
+      answer5: Yup.number().required("Answer Required"),
+      answer6: Yup.number().required("Answer Required"),
+      answer7: Yup.number().required("Answer Required"),
+      userId: Yup.number().required("User Id Required"),
     }),
   });
   console.log(formik.errors);
@@ -78,7 +100,7 @@ const GAD7Form = () => {
                   <input
                     type="radio"
                     name="answer1"
-                    value="One"
+                    value={0}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />
@@ -88,7 +110,7 @@ const GAD7Form = () => {
                   <input
                     type="radio"
                     name="answer1"
-                    value="Two"
+                    value={1}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />
@@ -97,7 +119,7 @@ const GAD7Form = () => {
                   <input
                     type="radio"
                     name="answer1"
-                    value="Three"
+                    value={2}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />
@@ -106,7 +128,7 @@ const GAD7Form = () => {
                   <input
                     type="radio"
                     name="answer1"
-                    value="Four"
+                    value={3}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />
@@ -127,7 +149,7 @@ const GAD7Form = () => {
                   <input
                     type="radio"
                     name="answer2"
-                    value="One"
+                    value={0}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />
@@ -136,7 +158,7 @@ const GAD7Form = () => {
                   <input
                     type="radio"
                     name="answer2"
-                    value="Two"
+                    value={1}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />
@@ -145,7 +167,7 @@ const GAD7Form = () => {
                   <input
                     type="radio"
                     name="answer2"
-                    value="Three"
+                    value={2}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />
@@ -154,7 +176,7 @@ const GAD7Form = () => {
                   <input
                     type="radio"
                     name="answer2"
-                    value="Four"
+                    value={3}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />
@@ -175,7 +197,7 @@ const GAD7Form = () => {
                   <input
                     type="radio"
                     name="answer3"
-                    value="One"
+                    value={0}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />
@@ -184,7 +206,7 @@ const GAD7Form = () => {
                   <input
                     type="radio"
                     name="answer3"
-                    value="Two"
+                    value={1}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />
@@ -193,7 +215,7 @@ const GAD7Form = () => {
                   <input
                     type="radio"
                     name="answer3"
-                    value="Three"
+                    value={2}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />
@@ -202,7 +224,7 @@ const GAD7Form = () => {
                   <input
                     type="radio"
                     name="answer3"
-                    value="Four"
+                    value={3}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />
@@ -220,7 +242,7 @@ const GAD7Form = () => {
                   <input
                     type="radio"
                     name="answer4"
-                    value="One"
+                    value={0}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />
@@ -230,7 +252,7 @@ const GAD7Form = () => {
                   <input
                     type="radio"
                     name="answer4"
-                    value="Two"
+                    value={1}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />
@@ -239,7 +261,7 @@ const GAD7Form = () => {
                   <input
                     type="radio"
                     name="answer4"
-                    value="Three"
+                    value={2}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />
@@ -248,7 +270,7 @@ const GAD7Form = () => {
                   <input
                     type="radio"
                     name="answer4"
-                    value="Four"
+                    value={3}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />
@@ -269,7 +291,7 @@ const GAD7Form = () => {
                   <input
                     type="radio"
                     name="answer5"
-                    value="One"
+                    value={0}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />
@@ -278,7 +300,7 @@ const GAD7Form = () => {
                   <input
                     type="radio"
                     name="answer5"
-                    value="Two"
+                    value={1}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />
@@ -287,7 +309,7 @@ const GAD7Form = () => {
                   <input
                     type="radio"
                     name="answer5"
-                    value="Three"
+                    value={2}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />
@@ -296,7 +318,7 @@ const GAD7Form = () => {
                   <input
                     type="radio"
                     name="answer5"
-                    value="Four"
+                    value={3}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />
@@ -317,7 +339,7 @@ const GAD7Form = () => {
                   <input
                     type="radio"
                     name="answer6"
-                    value="One"
+                    value={0}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />
@@ -327,7 +349,7 @@ const GAD7Form = () => {
                   <input
                     type="radio"
                     name="answer6"
-                    value="Two"
+                    value={1}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />
@@ -336,7 +358,7 @@ const GAD7Form = () => {
                   <input
                     type="radio"
                     name="answer6"
-                    value="Three"
+                    value={2}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />
@@ -345,7 +367,7 @@ const GAD7Form = () => {
                   <input
                     type="radio"
                     name="answer6"
-                    value="Four"
+                    value={3}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />
@@ -366,7 +388,7 @@ const GAD7Form = () => {
                   <input
                     type="radio"
                     name="answer7"
-                    value="One"
+                    value={0}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />
@@ -375,7 +397,7 @@ const GAD7Form = () => {
                   <input
                     type="radio"
                     name="answer7"
-                    value="Two"
+                    value={1}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />
@@ -384,7 +406,7 @@ const GAD7Form = () => {
                   <input
                     type="radio"
                     name="answer7"
-                    value="Three"
+                    value={2}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />
@@ -393,7 +415,7 @@ const GAD7Form = () => {
                   <input
                     type="radio"
                     name="answer7"
-                    value="Four"
+                    value={3}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   />

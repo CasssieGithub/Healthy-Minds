@@ -15,10 +15,10 @@ class PHQ9FormSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = PHQ9Form
-        fields = ('question', 'answer', "overallscore", )
+        fields = ('answer1', 'answer2', 'answer3', 'answer4','answer5', 'answer6',   'answer7', 'answer8', 'answer9',  "Overallscore", "userId", "date")
 
 class GAD7FormSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = GAD7Form
-        fields = ('question', 'answer',"overallscore",)
+        fields = ('answer1', 'answer2', 'answer3', 'answer4','answer5', 'answer6',   'answer7',"Overallscore", "userId", "date")

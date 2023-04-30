@@ -16,8 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include 
+from core.user.views import GAD7List
+from core.user.views import PHQ9List
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(('core.routers', 'core'), namespace='core-api')),
+    path('api/GAD7Form', GAD7List.as_view(), name='card_list'),
+    path('api/PHQ9Form', PHQ9List.as_view(), name='PHQ9Form'),
 ]
