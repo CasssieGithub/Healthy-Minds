@@ -4,7 +4,7 @@ import { Line } from "react-chartjs-2";
 function LineChart({ chartData }) {
   return (
     <div className="chart-container">
-      <h2 style={{ textAlign: "center" }}>Line Chart</h2>
+      <h2 style={{ textAlign: "center" }}>Previous Scores</h2>
       <Line
         data={chartData}
         options={{
@@ -16,7 +16,7 @@ function LineChart({ chartData }) {
           plugins: {
             title: {
               display: true,
-              text: "HI",
+              text: "GAD-7= Blue     ||      PHQ-9= Red",
             },
             legend: {
               display: false,

@@ -75,6 +75,7 @@ body {
   color: black;
   background-color: #f5e1ca;
   font-family: "Cormorant Garamond", serif;
+  font-weight: bold;
 }
 .logoutBtn:hover {
   background-color: #f6c493b3;
@@ -91,7 +92,7 @@ body {
 /* Mission Statement section */
 
 .missionStatementTitle {
-  text-align: left;
+  text-align: center;
   padding-left: 30px;
   font-size: 35px;
   padding: 0px 0px 20px 30px;
@@ -108,7 +109,7 @@ body {
 /*  Testimonials section */
 
 .testimonialsTitle {
-  text-align: left;
+  text-align: center;
   font-size: 35px;
   padding: 0px 0px 30px 30px;
   font-family: "Cormorant Garamond", serif;
@@ -128,7 +129,7 @@ body {
   max-width: 200px;
   max-height: 450px;
   margin-bottom: 100px;
-  box-shadow: 10px 5px 5px #807b7b;
+  box-shadow: -5px 5px 15px #807b7b;
   border: 1px solid #6d6969;
   transition: all 0.5s;
 }
@@ -138,43 +139,6 @@ body {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-
-/* .photoTwoOnIntroPage {
-  max-width: 250px;
-  max-height: 450px;
-  margin-bottom: 100px;
-  box-shadow: 10px 5px 5px #807b7b;
-  border: 1px solid #6d6969;
-}
-
-.photoThreeOnIntroPage {
-  max-width: 250px;
-  max-height: 450px;
-  margin-bottom: 100px;
-  box-shadow: 10px 5px 5px #807b7b;
-  border: 1px solid #6d6969;
-}
-.photoFourOnIntroPage {
-  max-width: 250px;
-  max-height: 450px;
-  margin-bottom: 100px;
-  box-shadow: 10px 5px 5px #807b7b;
-  border: 1px solid #6d6969;
-}
-.photoFiveOnIntroPage {
-  max-width: 250px;
-  max-height: 450px;
-  margin-bottom: 100px;
-  box-shadow: 10px 5px 5px #807b7b;
-  border: 1px solid #6d6969;
-}
-.photoSixOnIntroPage {
-  max-width: 250px;
-  max-height: 450px;
-  margin-bottom: 100px;
-  box-shadow: 10px 5px 5px #807b7b;
-  border: 1px solid #6d6969;
-} */
 
 .containerForPhotoOneOnIntroPage {
   display: flex;
@@ -223,7 +187,7 @@ body {
   font-family: "Cormorant Garamond", serif;
 }
 .stayInformedTitle {
-  text-align: left;
+  text-align: center;
   font-size: 35px;
   padding: 0px 0px 30px 30px;
   font-family: "Cormorant Garamond", serif;
