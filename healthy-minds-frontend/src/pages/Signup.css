@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap");
+
+.navBtns {
+  display: flex;
+  justify-content: right;
+  margin: 30px 30px 0px 0px;
+}
+
+.homeBtnOnSignUpPage {
+  border: 3px solid #b79877;
+  text-decoration: none;
+  font-size: 17px;
+  margin: 5px 10px 20px 10px;
+  border-radius: 10px;
+  padding: 7px 15px 7px 15px;
+  color: black;
+  background-color: #f5e1ca;
+  font-family: "Cormorant Garamond", serif;
+  cursor: pointer;
+  font-weight: bold;
+}
+.loginBtnOnSignUpPage {
+  border: 3px solid #b79877;
+  text-decoration: none;
+  font-size: 17px;
+  margin: 5px 10px 20px 10px;
+  border-radius: 10px;
+  padding: 7px 15px 7px 15px;
+  color: black;
+  background-color: #f5e1ca;
+  font-family: "Cormorant Garamond", serif;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.usernameInput {
+  margin: 10px 10px 20px 10px;
+  padding: 10px;
+  width: 15%;
+}
+.alreadyHaveAnAccountLink {
+  text-decoration: none;
+  color: #b79877;
+}
+.alreadyHaveAnAccountLink:hover {
+  text-decoration: underline;
+  color: black;
+}
+.signUpTitle {
+  font-size: 50px;
+  padding-top: 40px;
+}
+.instructionsToSignUp {
+  margin: 20px 10px 0px 10px;
+  font-size: 18px;
+}
+.submitBtnOnSignUpPage {
+  border: 3px solid #b79877;
+  text-decoration: none;
+  font-size: 17px;
+  margin: 5px 10px 20px 10px;
+  border-radius: 10px;
+  padding: 7px 15px 7px 15px;
+  color: black;
+  background-color: #f5e1ca;
+  font-family: "Cormorant Garamond", serif;
+  cursor: pointer;
+  font-weight: bold;
+}
+.submitBtnOnSignUpPage:hover {
+  background-color: #f6c493b3;
+}
+.containsAllInputsOnSignUpPage {
+  padding: 30px 50px 35px 50px;
+}
+.usernameTitle {
+  margin-right: 5px;
+}
+.emailTitle {
+  margin-right: 29px;
+}
+.passwordTitle {
+  margin-right: 8px;
+}

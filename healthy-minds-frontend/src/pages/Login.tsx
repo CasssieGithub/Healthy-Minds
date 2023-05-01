@@ -50,34 +50,48 @@ function Login() {
   });
 
   return (
-    <div className="h-screen flex bg-gray-bg1">
-      <div className="w-full max-w-md m-auto bg-white rounded-lg border border-primaryBorder shadow-default py-10 px-16">
-        <h1 className="text-2xl font-medium text-primary mt-4 mb-12 text-center">
-          Log in to your account 🔐
-        </h1>
+    <div>
+      <div className="containerForLoginPage">
+        <div className="navBtns">
+          <div>
+            <Link className="homeBtnOnLoginPage" to="/">
+              Home Page
+            </Link>
+          </div>
+          <div>
+            <Link className="signUpBtnOnLoginPage" to="/Signup">
+              Sign Up
+            </Link>
+          </div>
+        </div>
+        <h1 className="logInTitle">Log in to your account 🔐</h1>
         <form onSubmit={formik.handleSubmit}>
-          <div className="space-y-4">
-            <input
-              className="border-b border-gray-300 w-full px-2 h-8 rounded focus:border-blue-500"
-              id="email"
-              type="email"
-              placeholder="Email"
-              name="email"
-              value={formik.values.email}
-              onChange={formik.handleChange}
-              onBlur={formik.handleBlur}
-            />
+          <div className="containsEmailAndPasswordInputs">
+            <div className="containsEmailInput">
+              <input
+                className="emailInput"
+                id="email"
+                type="email"
+                placeholder="Email"
+                name="email"
+                value={formik.values.email}
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+              />
+            </div>
             {formik.errors.email ? <div>{formik.errors.email} </div> : null}
-            <input
-              className="border-b border-gray-300 w-full px-2 h-8 rounded focus:border-blue-500"
-              id="password"
-              type="password"
-              placeholder="Password"
-              name="password"
-              value={formik.values.password}
-              onChange={formik.handleChange}
-              onBlur={formik.handleBlur}
-            />
+            <div className="containsPasswordInput">
+              <input
+                className="passwordInput"
+                id="password"
+                type="password"
+                placeholder="Password"
+                name="password"
+                value={formik.values.password}
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+              />
+            </div>
             {formik.errors.password ? (
               <div>{formik.errors.password} </div>
             ) : null}
@@ -86,15 +100,24 @@ function Login() {
             {message}
           </div>
 
-          <div className="flex justify-center items-center mt-6">
-            <button type="submit" disabled={loading} className="logInBtn">
-              Login
-            </button>
+          <div className="containsLoginAndHomeBtnOnLoginPage">
             <div className="homeBtnOnLoginPageContainer">
               <Link className="homeBtnOnLoginPage" to="/">
                 Home
               </Link>
             </div>
+
+            <div className="loginBtnOnLoginPageContainer">
+              <button type="submit" disabled={loading} className="logInBtn">
+                Login
+              </button>
+            </div>
+          </div>
+          <div className="alreadySignUpBtnOnLoginPage">
+            <div className="dontHaveAnAccount">Don't have an account?</div>
+            <Link className="signUpBtnOnProfilePage" to="/Signup">
+              Create an account
+            </Link>
           </div>
         </form>
       </div>

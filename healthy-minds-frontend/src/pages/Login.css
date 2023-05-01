@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap");
 
+.signUpBtnOnLoginPage {
+  border: 3px solid #b79877;
+  text-decoration: none;
+  font-size: 17px;
+  margin-right: 10px;
+  border-radius: 10px;
+  padding: 7px 15px 7px 15px;
+  color: black;
+  background-color: #f5e1ca;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: bold;
+}
 .homeBtnOnLoginPage {
   border: 3px solid #b79877;
   text-decoration: none;
@@ -10,7 +22,12 @@
   color: black;
   background-color: #f5e1ca;
   font-family: "Cormorant Garamond", serif;
+  font-weight: bold;
 }
+.homeBtnOnLoginPage:hover {
+  background-color: #f6c493b3;
+}
+
 .homeBtnOnLoginPageContainer {
   margin-top: 20px;
 }
@@ -25,4 +42,41 @@
   background-color: #f5e1ca;
   font-family: "Cormorant Garamond", serif;
   cursor: pointer;
+  font-weight: bold;
+}
+
+.logInBtn:hover {
+  background-color: #f6c493b3;
+}
+.logInTitle {
+  font-size: 50px;
+}
+.emailInput {
+  padding: 10px;
+  width: 15%;
+}
+.passwordInput {
+  padding: 10px;
+  width: 15%;
+  margin-top: 20px;
+}
+.containsLoginAndHomeBtnOnLoginPage {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.containsEmailAndPasswordInputs {
+  margin-top: 50px;
+}
+.signUpBtnOnProfilePage {
+  text-decoration: none;
+  color: #b79877;
+}
+.dontHaveAnAccount {
+  padding: 17px;
+}
+
+.signUpBtnOnProfilePage:hover {
+  text-decoration: underline;
+  color: black;
 }
