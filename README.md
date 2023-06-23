@@ -9,7 +9,7 @@
 
 ## Description
            
-This mood tracking app gives you the ability to track your mood and provides two credible forms, based on the National Library of Medicine, to calculate a weekly score. The forms are referred to as the Patient Health Care (PHQ-9) and Generalized Anxiety Disorder (GAD-7) form. You can share this information with your healthcare provider for better treatment decisions. Hope you enjoy!
+This mood tracking app gives you the ability to track your mood and provides two credible forms, based on the National Library of Medicine, to calculate a weekly score. The forms are referred to as the Patient Health Care (PHQ-9) and Generalized Anxiety Disorder (GAD-7) form. You can share this information with your healthcare provider for better treatment decisions. I hope you enjoy!
 
 ## Pictures
 <img width="779" alt="Screen Shot 2023-05-09 at 11 06 25 AM" src="https://github.com/CasssieGithub/Healthy-Minds/assets/122661773/d84cf10c-226e-4f93-b6c9-78d39361e6af">
@@ -33,7 +33,16 @@ This mood tracking app gives you the ability to track your mood and provides two
  Python | Django | React | React Router | TypeScript | Redux | HTML | TailWindCSS | CSS
  
 ## Installation Instructions
-Clone my repository git@github.com:CasssieGithub/Healthy-Minds.git
-cd into (will enter when available)
+Clone my repository git@github.com: CasssieGithub/Healthy-Minds.git
+Open integrated terminal for both frontend and backend. 
+In the Frontend terminal run:
+           1. npm install 
+           2. npm start
 
-Link to live site: * enter live site once deployed *
+In the Backend terminal run:
+           1. python3 -m venv ~/ga-env
+           2. source ~/ga-env/bin/activate
+           3. python -m pip install Django
+           4. python3 manage.py runserver
+
+Enjoy! 
