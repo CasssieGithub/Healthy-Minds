@@ -34,7 +34,7 @@ This mood tracking app gives you the ability to track your mood and provides two
  
 ## Installation Instructions
 
-1. Clone my repository git@github.com: CasssieGithub/Healthy-Minds.git
+1. Clone my repository: git@github.com:CasssieGithub/Healthy-Minds.git
 2. Open integrated terminals for both frontend and backend.
    
 - In the Frontend terminal run:
