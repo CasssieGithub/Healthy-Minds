@@ -36,13 +36,13 @@ This mood tracking app gives you the ability to track your mood and provides two
 Clone my repository git@github.com: CasssieGithub/Healthy-Minds.git
 Open integrated terminal for both frontend and backend. 
 In the Frontend terminal run:
-           1. npm install 
-           2. npm start
+1. npm install 
+2. npm start
 
 In the Backend terminal run:
-           1. python3 -m venv ~/ga-env
-           2. source ~/ga-env/bin/activate
-           3. python -m pip install Django
-           4. python3 manage.py runserver
+1. python3 -m venv ~/ga-env
+2. source ~/ga-env/bin/activate
+3. python -m pip install Django
+4. python3 manage.py runserver
 
 Enjoy! 
