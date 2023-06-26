@@ -2,6 +2,7 @@
   "dependencies": {
     "@craco/craco": "^7.1.0",
     "autoprefixer": "^9.8.8",
+    "axios": "^1.4.0",
     "postcss": "^7.0.39",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
   }

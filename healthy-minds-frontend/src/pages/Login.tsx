@@ -64,7 +64,7 @@ function Login() {
             </Link>
           </div>
         </div>
-        <h1 className="logInTitle">Log in to your account 🔐</h1>
+        <h1 className="logInTitle">Login to your account 🔐</h1>
         <form onSubmit={formik.handleSubmit}>
           <div className="containsEmailAndPasswordInputs">
             <div className="containsEmailInput">
