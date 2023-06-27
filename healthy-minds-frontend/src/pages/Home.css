@@ -116,7 +116,6 @@ body {
 }
 .testimonialsSection {
   font-size: 18px;
-  margin: 30px 50px 20px 50px;
   display: flex;
   justify-content: space-evenly;
   background-color: #f3ebe1;
@@ -128,7 +127,7 @@ body {
 .photosOnIntroPage {
   max-width: 200px;
   max-height: 450px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   box-shadow: -5px 5px 15px #807b7b;
   border: 1px solid #6d6969;
   transition: all 0.5s;
@@ -189,7 +188,7 @@ body {
 .stayInformedTitle {
   text-align: center;
   font-size: 35px;
-  padding: 0px 0px 30px 30px;
+  padding: 50px 0px 25px 30px;
   font-family: "Cormorant Garamond", serif;
 }
 .footerRightSide {
@@ -223,6 +222,64 @@ body {
   color: #b79877;
 }
 
+@media only screen and (max-width: 1100px) {
+  .containerForPhotoOneOnIntroPage {
+    flex-direction: column;
+  }
+  .containerForPhotoTwoOnIntroPage {
+    flex-direction: column;
+  }
+  .containerForPhotoThreeOnIntroPage {
+    flex-direction: column;
+  }
+
+  .containerForPhotoFourOnIntroPage {
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+  .containerForPhotoFiveOnIntroPage {
+    flex-direction: column;
+  }
+  .containerForPhotoSixOnIntroPage {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .testimonialsSection {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .containerForPhotoOneOnIntroPage {
+    flex-direction: inherit;
+    justify-content: center;
+  }
+  .containerForPhotoTwoOnIntroPage {
+    flex-direction: inherit;
+    justify-content: center;
+  }
+  .containerForPhotoThreeOnIntroPage {
+    flex-direction: inherit;
+    justify-content: center;
+  }
+
+  .containerForPhotoFourOnIntroPage {
+    flex-direction: inherit;
+    justify-content: center;
+  }
+  .containerForPhotoFiveOnIntroPage {
+    flex-direction: inherit;
+    justify-content: center;
+  }
+  .containerForPhotoSixOnIntroPage {
+    flex-direction: inherit;
+    justify-content: center;
+  }
+  .missionStatementParagraph {
+    margin: auto;
+  }
+}
+
 @media only screen and (max-width: 750px) {
   .introImage {
     padding: 0px;
@@ -231,7 +288,7 @@ body {
 
 @media only screen and (max-width: 550px) {
   .introImage {
-    width: 400px;
+    width: 450px;
     height: 500px;
   }
 }
