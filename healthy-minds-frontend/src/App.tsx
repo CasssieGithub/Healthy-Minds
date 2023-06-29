@@ -7,7 +7,7 @@ import { PersistGate } from "redux-persist/integration/react";
 import store, { persistor } from "./store";
 import Login from "./pages/Login";
 import Profile from "./pages/Profile";
-import HomePage from "./pages/Homee.tsx/Home";
+import HomePage from "./pages/Home/HomePage";
 import Signup from "./pages/Signup";
 import PHQ9Form from "./pages/PHQ9Form";
 import GAD7Form from "./pages/GAD7Form";

@@ -1,4 +1,4 @@
-import "./Home.css";
+import "./MissionStatement.css";
 
 const MissionStatement = () => {
   return (

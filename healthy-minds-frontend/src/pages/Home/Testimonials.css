@@ -1,0 +1,123 @@
+.testimonialsTitle {
+  text-align: center;
+  font-size: 35px;
+  padding: 0px 0px 30px 30px;
+  font-family: "Cormorant Garamond", serif;
+}
+.testimonialsSection {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #f3ebe1;
+  padding-top: 40px;
+}
+
+/* Photos on Testimonals section page */
+
+.photosOnIntroPage {
+  max-width: 200px;
+  max-height: 450px;
+  margin-bottom: 50px;
+  box-shadow: -5px 5px 15px #807b7b;
+  border: 1px solid #6d6969;
+  transition: all 0.5s;
+}
+
+.photosOnIntroPage:hover {
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.containerForPhotoOneOnIntroPage {
+  display: flex;
+  font-size: 16px;
+  text-align: left !important;
+}
+.containerForPhotoTwoOnIntroPage {
+  display: flex;
+  font-size: 16px;
+  text-align: left !important;
+}
+.containerForPhotoThreeOnIntroPage {
+  display: flex;
+  font-size: 16px;
+  text-align: left !important;
+}
+.containerForPhotoFourOnIntroPage {
+  display: flex;
+  font-size: 16px;
+  text-align: left !important;
+}
+.containerForPhotoFiveOnIntroPage {
+  display: flex;
+  font-size: 16px;
+  text-align: left !important;
+}
+.containerForPhotoSixOnIntroPage {
+  display: flex;
+  font-size: 16px;
+  text-align: left !important;
+}
+.name {
+  text-align: right !important;
+}
+.quoteFromTestimonial {
+  padding-left: 20px;
+  margin: 15px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .containerForPhotoOneOnIntroPage {
+    flex-direction: column;
+  }
+  .containerForPhotoTwoOnIntroPage {
+    flex-direction: column;
+  }
+  .containerForPhotoThreeOnIntroPage {
+    flex-direction: column;
+  }
+
+  .containerForPhotoFourOnIntroPage {
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+  .containerForPhotoFiveOnIntroPage {
+    flex-direction: column;
+  }
+  .containerForPhotoSixOnIntroPage {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .testimonialsSection {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .containerForPhotoOneOnIntroPage {
+    flex-direction: inherit;
+    justify-content: center;
+  }
+  .containerForPhotoTwoOnIntroPage {
+    flex-direction: inherit;
+    justify-content: center;
+  }
+  .containerForPhotoThreeOnIntroPage {
+    flex-direction: inherit;
+    justify-content: center;
+  }
+
+  .containerForPhotoFourOnIntroPage {
+    flex-direction: inherit;
+    justify-content: center;
+  }
+  .containerForPhotoFiveOnIntroPage {
+    flex-direction: inherit;
+    justify-content: center;
+  }
+  .containerForPhotoSixOnIntroPage {
+    flex-direction: inherit;
+    justify-content: center;
+  }
+}

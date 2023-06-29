@@ -1,0 +1,42 @@
+.footer {
+  text-align: center;
+  font-size: 20px;
+  margin: 0px 0px 30px 0px;
+  font-family: "Cormorant Garamond", serif;
+}
+.stayInformedTitle {
+  text-align: center;
+  font-size: 35px;
+  padding: 50px 0px 25px 30px;
+  font-family: "Cormorant Garamond", serif;
+}
+.footerRightSide {
+  display: flex;
+  justify-content: center;
+}
+.lineBetweenSocialSites {
+  padding-right: 20px;
+}
+#facebook {
+  text-decoration: none;
+  color: black;
+  padding-right: 20px;
+}
+#facebook:hover {
+  color: #b79877;
+}
+#instagram {
+  text-decoration: none;
+  color: black;
+  padding-right: 20px;
+}
+#instagram:hover {
+  color: #b79877;
+}
+#twitter {
+  text-decoration: none;
+  color: black;
+}
+#twitter:hover {
+  color: #b79877;
+}
