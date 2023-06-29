@@ -2,11 +2,14 @@ import { Link } from "react-router-dom";
 import "./Home.css";
 // import Fade from "react-reveal";
 import FadeIn from "react-fade-in";
-import { RootState } from "../store";
+import { RootState } from "../../store";
 import { useDispatch, useSelector } from "react-redux";
-
 import { useNavigate, useLocation } from "react-router";
-import authSlice from "../store/slices/auth";
+import authSlice from "../../store/slices/auth";
+import MissionStatement from "./MissionStatement";
+import { Routes, Route } from "react-router-dom";
+// import Footer from "./Footer";
+// import Testimonials from "./Testimonials";
 
 const HomePage = () => {
   const dispatch = useDispatch();
@@ -48,7 +51,6 @@ const HomePage = () => {
           </div>
         </>
       )}
-
       <div>
         <div></div>
         <div className="imageOnIntro">
@@ -56,20 +58,7 @@ const HomePage = () => {
         </div>
       </div>
       {/* Mission Statement */}
-      <div className="containerForMissionStatement">
-        <div className="missionStatementTitle">Our Mission Statement</div>
-        <div className="containerForMissionStatementParagraph">
-          <div className="missionStatementParagraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </div>
-        </div>
-      </div>
+      <MissionStatement />
       {/* Testimonials */}
       <div className="containerForTestimonial">
         <div className="testimonialsTitle">Testimonials</div>
@@ -129,6 +118,7 @@ const HomePage = () => {
               <img
                 className="photosOnIntroPage"
                 src="https://i.imgur.com/2etU3RS.jpg"
+                alt=""
               />
               <div className="quoteFromTestimonial">
                 "I love this app! If it wasn't for this app,
@@ -145,6 +135,7 @@ const HomePage = () => {
               <img
                 className="photosOnIntroPage"
                 src="https://i.imgur.com/a5tiPwV.jpg"
+                alt=""
               />
               <div className="quoteFromTestimonial">
                 "I love this app! If it wasn't for this app,
@@ -181,13 +172,11 @@ const HomePage = () => {
       <div className="footer">
         <div className="footerRightSide">
           <Link to="https://www.facebook.com" id="facebook">
-            {" "}
-            Facebook{" "}
+            Facebook
           </Link>
           <div className="lineBetweenSocialSites"> | </div>
           <Link to="https://www.instagram.com/" id="instagram">
-            {" "}
-            Instagram{" "}
+            Instagram
           </Link>
           <div className="lineBetweenSocialSites"> | </div>
           <Link to="https://twitter.com/" id="twitter">
