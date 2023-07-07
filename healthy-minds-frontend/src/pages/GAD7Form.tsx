@@ -1,4 +1,4 @@
-import { Formik, FormikConsumer } from "formik";
+// import { Formik, FormikConsumer } from "formik";
 import { Link } from "react-router-dom";
 import { useFormik } from "formik";
 import React, { useState } from "react";
@@ -468,7 +468,5 @@ const GAD7Form = () => {
     </div>
   );
 };
-
-// ReactDOM.render(<Example />, document.getElementById("root"));
 
 export default GAD7Form;

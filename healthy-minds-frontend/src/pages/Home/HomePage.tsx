@@ -1,6 +1,5 @@
 import "./HomePage.css";
 import MissionStatement from "./MissionStatement";
-import { Routes, Route } from "react-router-dom";
 import Testimonials from "./Testimonials";
 import Footer from "./Footer";
 import Nav from "./Nav";

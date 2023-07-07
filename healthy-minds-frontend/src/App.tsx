@@ -1,8 +1,6 @@
-import React from "react";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import { Provider } from "react-redux";
-// import ProtectedRoute from "./routes/ProtectedRoute";
 import { PersistGate } from "redux-persist/integration/react";
 import store, { persistor } from "./store";
 import Login from "./pages/Login";
