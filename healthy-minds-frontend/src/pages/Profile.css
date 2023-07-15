@@ -105,7 +105,7 @@
 
 .tableTitle {
   text-align: center;
-  font-size: 20px;
+  font-size: 23px;
   font-weight: bold;
 }
 .holdingTables {
@@ -121,4 +121,8 @@
   padding: 20px;
   margin: 40px;
   border: 1px solid black;
+}
+.dataDisplayedOnTable {
+  font-family: sans-serif;
+  font-weight: normal;
 }

@@ -166,8 +166,8 @@ const Profile = () => {
 
       <div className="holdingTables">
         <div className="containsPHQ9Table">
+          <div className="tableTitle">PHQ-9 Data</div>
           <table>
-            <div className="tableTitle">PHQ-9 Data</div>
             <tr>
               <th>Date</th>
               <th>Overall Score</th>
@@ -175,7 +175,7 @@ const Profile = () => {
             </tr>
             {PHQ9FormInformation.map((data: any) => {
               return (
-                <tr>
+                <tr className="dataDisplayedOnTable">
                   <td>{timeConverter(data.date)}</td>
                   <td>{data.Overallscore}</td>
                   <td>{userId}</td>
@@ -185,8 +185,8 @@ const Profile = () => {
           </table>
         </div>
         <div className="containsGAD7Table">
+          <div className="tableTitle">GAD-7 Data</div>
           <table>
-            <div className="tableTitle">GAD-7 Data</div>
             <tr>
               <th>Date</th>
               <th>Overall Score</th>
@@ -194,7 +194,7 @@ const Profile = () => {
             </tr>
             {GAD7FormInformation.map((data: any) => {
               return (
-                <tr>
+                <tr className="dataDisplayedOnTable">
                   <td>{timeConverter(data.date)}</td>
                   <td>{data.Overallscore}</td>
                   <td>{userId}</td>
