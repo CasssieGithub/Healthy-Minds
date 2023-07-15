@@ -113,25 +113,26 @@ const Profile = () => {
     `"Our wounds are often the openings into the best and most beautiful part
       of us.” — David Richo `,
 
-    `"There is hope, even when your brain tells you there isn’t.” — John
+    `There is hope, even when your brain tells you there isn’t. — John
       Green`,
 
-    `"Numbing the pain for a while will make it worse when you finally feel it” — Albus Dumbledore`,
+    `Numbing the pain for a while will make it worse when you finally feel it. — Albus Dumbledore`,
 
-    `“Emotional pain is not something that should be hidden away and never spoken about. There is truth in your pain, there is growth in your pain, but only if it’s first brought out into the open.” — Steven Aitchison`,
+    `Emotional pain is not something that should be hidden away and never spoken about. There is truth in your pain, there is growth in your pain, but only if it’s first brought out into the open. — Steven Aitchison`,
 
-    `“My dark days made me strong. Or maybe I already was strong, and they made me prove it." — Emery Lord`,
+    `My dark days made me strong. Or maybe I already was strong, and they made me prove it. — Emery Lord`,
 
-    `“Being able to be your true self is one of the strongest components of good mental health.” — Dr. Lauren Fogel Mersy`,
+    `Being able to be your true self is one of the strongest components of good mental health. — Dr. Lauren Fogel Mersy`,
 
-    `“Just when the caterpillar thought the world was ending, he turned into a butterfly.”— Anonymous proverb`,
+    `Just when the caterpillar thought the world was ending, he turned into a butterfly.— Anonymous proverb`,
 
-    `“Out of suffering have emerged the strongest souls; the most massive characters are seared with scars.” — Kahlil Gibran`,
+    `Out of suffering have emerged the strongest souls; the most massive characters are seared with scars. — Kahlil Gibran`,
 
-    `“Mental health problems don’t define who you are. They are something you experience. You walk in the rain and you feel the rain, but you are not the rain.” — Matt Haig`,
-    `“Sometimes you climb out of bed in the morning and you think, I’m not going to make it, but you laugh inside — remembering all the times you’ve felt that way.” — Charles Bukowski`,
+    `Mental health problems don’t define who you are. They are something you experience. You walk in the rain and you feel the rain, but you are not the rain. — Matt Haig`,
 
-    `“Some of the most comforting words in the universe are ‘me too.’ That moment when you find out that your struggle is also someone else’s struggle, that you’re not alone, and that others have been down the same road.” — Unknown`,
+    `Sometimes you climb out of bed in the morning and you think, I’m not going to make it, but you laugh inside — remembering all the times you’ve felt that way. — Charles Bukowski`,
+
+    `Some of the most comforting words in the universe are ‘me too.’ That moment when you find out that your struggle is also someone else’s struggle, that you’re not alone, and that others have been down the same road. — Unknown`,
   ];
   const randomIndex = Math.floor(Math.random() * inspirationalQuotes.length);
 
