@@ -16,7 +16,6 @@ import LineChart from "../components/LineChart";
 import PHQ9Form from "./PHQ9Form";
 import "chartjs-adapter-date-fns";
 
-// This answer is not useful
 function timeConverter(UNIX_timestamp: number) {
   var a = new Date(UNIX_timestamp * 1000);
   var months = [
@@ -66,12 +65,7 @@ const Profile = () => {
           // @ts-expect-error
           return { y: data.Overallscore, x: data.date };
         }),
-        backgroundColor: [
-          "#ff0000",
-          // "#50AF95",
-          // "#f3ba2f",
-          // "#2a71d0",
-        ],
+        backgroundColor: ["#ff0000"],
         borderColor: "red",
         borderWidth: 2,
       },
@@ -82,13 +76,7 @@ const Profile = () => {
           // @ts-expect-error
           return { y: data.Overallscore, x: data.date };
         }),
-        backgroundColor: [
-          "#0000ff",
-          // "#ecf0f1",
-          // "#50AF95",
-          // "#f3ba2f",
-          // "#2a71d0",
-        ],
+        backgroundColor: ["#0000ff"],
         borderColor: "blue",
         borderWidth: 2,
       },
@@ -120,8 +108,6 @@ const Profile = () => {
       setGAD7FormInformation(findFormByUserId);
     });
   }, []);
-
-  // console.log(PHQ9FormInformation, GAD7FormInformation);
 
   const inspirationalQuotes = [
     `"Our wounds are often the openings into the best and most beautiful part
@@ -171,13 +157,11 @@ const Profile = () => {
       ) : (
         <p className="text-center items-center">Loading ...</p>
       )}
-      {/* <img src="https://i.imgur.com/bOFeM1V.jpg" /> */}
+
       <p className="self-center my-auto">Welcome, {user.data?.username}</p>
 
       <div className="chartAndinspirationalQuotes">
         <LineChart chartData={chartData} />
-
-        <div className="inspirationalQuotes">{/* <q>{randomChoice}</q> */}</div>
       </div>
 
       <div className="holdingTables">
